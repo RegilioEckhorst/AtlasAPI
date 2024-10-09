@@ -1,6 +1,6 @@
 @AtlasAPI_HostAddress = http://localhost:5278
 
-GET {{AtlasAPI_HostAddress}}/weatherforecast/
+GET {{AtlasAPI_HostAddress}}/exercises/
 Accept: application/json
 
 ###
