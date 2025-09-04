@@ -1,0 +1,5 @@
+### @name Get Host Address
+GET {{HostAddress}}
+
+### //@name Get All Exercises
+GET {{HostAddress}}getAllExercises

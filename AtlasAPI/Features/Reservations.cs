@@ -1,4 +1,6 @@
-﻿namespace AtlasAPI;
+﻿using AtlasAPI.Features.Categories;
+
+namespace AtlasAPI.Features;
 
 public class Reservations
 {
@@ -14,6 +16,6 @@ public class Reservations
     public int CategoryId { get; set; }
     // Navigation properties
     public Users User { get; set; }
-    public Exercises Exercise { get; set; }
-    public Categories Category { get; set; }
+    public Exercise Exercise { get; set; }
+    public Category Category { get; set; }
 }

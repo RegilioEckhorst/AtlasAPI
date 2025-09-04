@@ -1,15 +1,16 @@
-﻿namespace AtlasAPI;
+﻿using AtlasAPI.Features;
 
-public class Exercises
+namespace AtlasAPI.Features.Categories;
+
+public class Category
 {
     public int Id { get; set; }
     public required string Name { get; set; }
-    public required string Description { get; set; }
     public string Icon { get; set; } = "default-icon.png"; // Default icon
-    public string Color { get; set; } = "#FFFFFF";
+    public string Color { get; set; } = "#FFFFFF"; // Default color
     public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }
     // Navigation properties
-    public ICollection<Categories> Categories { get; set; } = [];
+    public ICollection<Exercise> Exercises { get; set; } = [];
     public ICollection<Reservations> Reservations { get; set; } = [];
 }

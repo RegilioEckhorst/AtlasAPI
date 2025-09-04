@@ -1,4 +1,4 @@
-﻿namespace AtlasAPI;
+﻿namespace AtlasAPI.Features;
 
 public class Users
 {
