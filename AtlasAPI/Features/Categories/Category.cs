@@ -1,4 +1,4 @@
-﻿using AtlasAPI.Features;
+﻿using AtlasAPI.Features.Excercise;
 
 namespace AtlasAPI.Features.Categories;
 

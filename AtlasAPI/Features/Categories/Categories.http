@@ -1,5 +1,31 @@
-### @name Get Host Address
-GET {{HostAddress}}
+@id = 9
 
-### //@name Get All Exercises
-GET {{HostAddress}}getAllExercises
+### //Create Category
+POST {{HostAddress}}/categories
+Content-Type: application/json
+{
+  "name":"Cardio"
+}
+
+### //Get All Categories
+GET {{HostAddress}}/categories
+Content-Type: application/json
+
+### //Get Category by ID
+GET {{HostAddress}}/categories/{{id}}
+Content-Type: application/json
+
+### //Update Category
+PUT {{HostAddress}}/categories/{{id}}
+Content-Type: application/json
+{
+  "name":"Weightlifting/crossfit"
+}
+
+### //Delete Category
+DELETE {{HostAddress}}/categories/{{id}}
+Content-Type: application/json
+
+### //Delete all categories
+DELETE {{HostAddress}}/categories/delete
+Content-Type: application/json
